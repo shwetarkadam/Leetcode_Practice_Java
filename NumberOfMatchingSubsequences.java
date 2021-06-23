@@ -1,6 +1,6 @@
 class Solution {
     public int numMatchingSubseq(String s, String[] words) {
-      //had to use map to pass the last 7 testcases
+      //had to use map to pass the last 7 testcases map stores if the word is a asubsequence and at the same tine keep checking updating the result count
         int result=0;
         HashMap<String,Boolean>map=new HashMap();
         for(String word:words){
