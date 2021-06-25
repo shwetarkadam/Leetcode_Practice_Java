@@ -10,7 +10,7 @@ class Solution {
             for(long []row2:row)
             Arrays.fill(row2,-1);
         
-       int count=(int)solve(m,n,maxMove,startRow,startColumn);
+       int count=(int)solve(m,n,maxMove,startRow,startColumn);//long answer casted as int
         return count;
     }
     
@@ -27,6 +27,6 @@ class Solution {
         if(mat[r][c][moves] != -1)
             return mat[r][c][moves];
         
-      return mat[r][c][moves]=(solve(m,n,moves-1,r-1,c)+solve(m,n,moves-1,r+1,c)+solve(m,n,moves-1,r,c-1)+solve(m,n,moves-1,r,c+1))%MOD;
+      return mat[r][c][moves]=(solve(m,n,moves-1,r-1,c)+solve(m,n,moves-1,r+1,c)+solve(m,n,moves-1,r,c-1)+solve(m,n,moves-1,r,c+1))%MOD;//answer calculated comes in long format hence matrix is long too 
     }
 }
