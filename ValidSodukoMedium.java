@@ -5,6 +5,7 @@ class Solution {
        
             for(int j=0;j<9;j++){
                 if(board[i][j]!= '.'){
+                     //store every value as a key as each number shd be unique in each row,col and box
                     String row =board[i][j]+" in row "+i;
                     String col =board[i][j]+" in col"+j;
                     String box=board[i][j]+" in box "+i/3+" and "+j/3;
