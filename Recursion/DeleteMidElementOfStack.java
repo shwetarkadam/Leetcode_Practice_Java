@@ -49,10 +49,11 @@ class Solution
         solve(s,k);
     } 
     public void  solve(Stack<Integer>s,int k){
-        if(k==1){
+        if(k==1){ //base condition
             s.pop();
             return;
         }
+        //hypotheses
         int t=s.pop();
         solve(s,k-1);
     
